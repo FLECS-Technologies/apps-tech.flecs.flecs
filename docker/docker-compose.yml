@@ -17,13 +17,13 @@ services:
     extra_hosts:
       - flecs-floxy:172.30.0.1
     networks:
-      flecs:
+      flecs-in-flecs:
         ipv4_address: 172.30.255.254
 volumes:
   flecsd:
 networks:
-  flecs:
-    name: flecs
+  flecs-in-flecs:
+    name: flecs-in-flecs
     driver: bridge
     ipam:
       config:
